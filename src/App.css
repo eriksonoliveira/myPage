@@ -1,28 +1,53 @@
-.App {
-  text-align: center;
+.bg-grey {
+  background-color: #e6ecf0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.bg-blue {
+  background-color: #1da1f2;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.color-blue {
+  color: #1da1f2;
 }
 
-.App-title {
-  font-size: 1.5em;
+#root,
+.app {
+  height: 100%;
 }
 
-.App-intro {
-  font-size: large;
+.navbar {
+  color: #ffffff;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.navbar-brand {
+  font-weight: bold;
+}
+
+.tweet-box {
+  padding-top: 1em;
+}
+
+.tweet-box-btn {
+  cursor: pointer;
+}
+
+.tweet-box-btn:disabled {
+  cursor: not-allowed;
+}
+
+.tweets-list {
+  margin-top: 2em;
+}
+
+.side-bar {
+  background-color: #ffffff;
+  margin-top: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.user-avatar {
+  width: 8em;
+  margin: auto;
+  display: block;
 }
