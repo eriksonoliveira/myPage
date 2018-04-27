@@ -6,7 +6,7 @@ class TweetsList extends Component {
     //Creates tweets list
     let tweets = this.props.tweets.map(tweet => {
       return (
-        <li className="list-group-item tweets-list-item mb-1">
+        <li className="list-group-item tweets-list-item">
           <div className="media ">
             <img
               className="mr-3 rounded-circle"
@@ -14,9 +14,9 @@ class TweetsList extends Component {
               alt={this.props.user.name}
             />
             <p className="media-body mb-0">
-              <h5 className="mt-0 mb-1 color-blue">
+              <h6 className="mt-0 mb-1 color-blue">
                 <strong>{this.props.user.name}</strong>
-              </h5>
+              </h6>
               <p>{tweet}</p>
             </p>
           </div>
@@ -26,7 +26,14 @@ class TweetsList extends Component {
 
     return (
       <div className="tweets-list">
-        <ul className="list-group">{tweets}</ul>
+        <ul className="list-group">
+          <li className="list-group-item">
+            <h5>
+              <strong>Tweets</strong>
+            </h5>
+          </li>
+          {tweets}
+        </ul>
       </div>
     );
   }

@@ -16,6 +16,7 @@ class SideBar extends Component {
             <h3>
               <strong>{this.props.user.name}</strong>
             </h3>
+            <h6 className="text-muted">{this.props.user.username}</h6>
           </div>
         </div>
       </div>
