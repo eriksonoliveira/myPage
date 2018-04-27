@@ -39,11 +39,19 @@
   margin-top: 2em;
 }
 
+.tweets-list-item .media > img {
+  width: 30px;
+}
+
 .side-bar {
   background-color: #ffffff;
   margin-top: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+.side-bar.card {
+  height: 20em;
 }
 
 .user-avatar {
